@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.prepare_command     = <<-EOF
     while read line; do
         if [[ $line == *"//  iOS-IMKi"* ]]; then
-            sed -i '' "s#//  iOS-IMKi#\@import Foundation\;#" "RongCloudIM/RongIMKit.framework/Headers/RCThemeDefine.h"
+            sed -i '' "s#//  iOS-IMKi#\@import Foundation;#" "RongCloudIM/RongIMKit.framework/Headers/RCThemeDefine.h"
         fi
     done < "RongCloudIM/RongIMKit.framework/Headers/RCThemeDefine.h"
 
@@ -169,8 +169,6 @@ Pod::Spec.new do |s|
       header "RCFileUtility.h"
       header "RCReadReceiptInfo.h"
       header "RCUserOnlineStatusInfo.h"
-
-      header "RCFwLog.h"
 
       header "RCMentionedInfo.h"
       

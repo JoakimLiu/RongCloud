@@ -11,7 +11,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 target <Your Target Name> do
-    pod 'RongCloud'
+    pod 'RongCloud/IMKit'
+    pod 'RongCloud/IMLib'
 end
 ```
 

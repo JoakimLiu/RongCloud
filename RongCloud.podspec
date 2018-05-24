@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
 
   s.prepare_command     = <<-EOF
     while read line; do
-        if [[ $line == *"//  iOS-IMKi"* ]]; then
-            sed -i '' "s#//  iOS-IMKi#\@import Foundation;#" "RongCloudIM/RongIMKit.framework/Headers/RCThemeDefine.h"
+        if [[ $line == *"//  iOS-IMKit"* ]]; then
+            sed -i '' "s#//  iOS-IMKit#\@import Foundation;#" "RongCloudIM/RongIMKit.framework/Headers/RCThemeDefine.h"
             break
         fi
     done < "RongCloudIM/RongIMKit.framework/Headers/RCThemeDefine.h"

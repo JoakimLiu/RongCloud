@@ -29,12 +29,14 @@ Pod::Spec.new do |s|
     lib.vendored_libraries = 'RongCloudIM/libopencore-amrnb.a'
     lib.libraries = 'z', 'stdc++', 'sqlite3'
     lib.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
+    lib.resources = ['RongCloudIM/RCConfig.plist']
   end
 
   s.prepare_command     = <<-EOF
     while read line; do
         if [[ $line == *"//  iOS-IMKi"* ]]; then
             sed -i '' "s#//  iOS-IMKi#\@import Foundation;#" "RongCloudIM/RongIMKit.framework/Headers/RCThemeDefine.h"
+            break
         fi
     done < "RongCloudIM/RongIMKit.framework/Headers/RCThemeDefine.h"
 

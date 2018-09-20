@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :http => "http://downloads.rongcloud.cn/Rong_Cloud_iOS_IM_SDK_v2_8_32_Stable.zip" }
+  s.source       = { :http => "http://downloads.rongcloud.cn/Rong_Cloud_iOS_IM_SDK_v2_9_6_Stable.zip" }
 
   s.subspec 'IMKit' do |kit|
     kit.vendored_frameworks = 'RongCloudIM/RongIMKit.framework'

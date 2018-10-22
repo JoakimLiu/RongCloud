@@ -1,3 +1,5 @@
+此仓库不是官方出品！！！
+
 <p>
 <a href="http://cocoadocs.org/docsets/RongCloud"><img src="https://img.shields.io/cocoapods/v/RongCloud.svg?style=flat"></a>
 </p>
